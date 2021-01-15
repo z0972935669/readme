@@ -78,3 +78,9 @@ End generating TensorRT runtime models
 size: 96088476
 WARNING: Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
 UNKNOWN: Deserialize required 427847 microseconds.
+
+------------------------------
+FTP
+主機: 192.168.0.151
+使用者: user
+密碼: 12345678
