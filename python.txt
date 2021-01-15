@@ -39,3 +39,42 @@ uWSGI==2.0.19.1 (註解，windows用不到)
 POSTGRESQL_HOST = 1.171.196.9 (改資料庫的IP: Danial)
 SUPER = root
 SUPER_PASSWORD = 00
+
+------------------------------
+ps(開3個ps)
+
+#is daniel
+ssh user@192.168.0.151
+12345678
+cd Daniel/Allen/
+source venv/bin/activate
+python manage.py runserver 192.168.0.151:9000
+
+
+# not daniel (2個視窗不能關)
+1.
+ssh user@192.168.0.151
+12345678
+cd Daniel/redis-stable/src/
+./redis-server  
+
+2.
+ssh user@192.168.0.151
+12345678
+cd Daniel/Allen/
+source venv/bin/activate
+python RedisSetup.py
+
+成功後會跑下列: 
+Start generating TenosrRT runtime models
+UNKNOWN: Deserialize required 502362 microseconds.
+UNKNOWN: Deserialize required 1775 microseconds.
+UNKNOWN: Deserialize required 1425 microseconds.
+UNKNOWN: Deserialize required 1595 microseconds.
+UNKNOWN: Deserialize required 1605 microseconds.
+UNKNOWN: Deserialize required 3115 microseconds.
+UNKNOWN: Deserialize required 9864 microseconds.
+End generating TensorRT runtime models
+size: 96088476
+WARNING: Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+UNKNOWN: Deserialize required 427847 microseconds.
