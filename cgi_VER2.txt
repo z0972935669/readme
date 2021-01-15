@@ -1,0 +1,26 @@
+VER2
+
+function要給名稱
+user:如果有新增的話再提醒書平
+get:"lpr_bw_list":{}, 要給空值
+status:1
+※:1是OK，0是error，跳alert顯示數字
+※status: 3 是被擋掉
+
+AI / LPR
+---------------------------------------
+LPR不能用
+
+GET: 取資料
+SET: 新增/修改
+
+lpr_bw_list: 黑白名單
+channel: video
+event_type:黑白名單(車不能進來 - 黑)
+license_text:車牌文字
+position:停車的位置
+type:設定時間同步 (0:使用機器的現在時間，1:NTP，2:手動設定)
+format:點開H欄(0:使用機器的現在時間，1:NTP，2:手動設定)
+year:
+month:
+timestamp:給DB用，我不用理

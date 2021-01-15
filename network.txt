@@ -1,0 +1,20 @@
+network
+------------------
+Obtain an IP address automatically (自動設定)
+
+"action": "get",
+"type": 1
+"hwaddress": "eee"
+"ipaddress": "192.168.0.179"
+
+Use the following IP address (手動設定)
+"type": 0,
+"action": "get",
+"hwaddress": "eee"
+"ipaddress": "192.168.0.179"
+
+test: hide
+
+依type的值: 改預設值
+回傳不會有2跟3的問題
+

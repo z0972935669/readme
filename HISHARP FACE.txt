@@ -1,0 +1,37 @@
+HISHARP FACE
+1.強化註冊跳提示
+2.新增跟修改資料欄位
+
+getuser
+------------------------------
+1.縮圖
+2.當前頁修改資料 + lightbox
+3.修改btn
+4.刪除btn
+5.
+
+adduser
+------------------------------
+1.新增上傳圖片物件
+2.上傳後新增附加檔案，下面顯示「檔案名稱」
+3.「檔案名稱」旁設checkbox
+4.下面有按鈕可以驗證，按驗證按鈕後需要網址傳ajax提供圖片名稱給Danial，最多3筆
+5.勾選checkbox可移除
+6.送出下面要做虛擬頭像 * 3，驗證完要替換虛擬頭像
+
+※跟Danial討論看是跳轉網頁還是使用ajax
+
+urls.py
+
+image1
+image2
+image3
+
+/api/addimages/
+
+key:
+image1
+image2
+image3
+
+/api/deleteregisteruser/

@@ -1,0 +1,120 @@
+Maintenance
+---------------------------
+Backup and Restore - 接完了，書平要再測
+a.Export Setting - 先設假連結，後續定義name再更換
+
+Reboot - 接完了，書平要再測 - 上傳ok - ok 
+
+Upgrade - 接完了，書平要再測 - 上傳ok - ok
+
+Operation Log (System Log) - ok
+---------------------------
+
+1.Sub Type 跟 User Name 目前沒有
+2.多一個欄位叫log - ok
+3.需要總數量和搜尋後的總數量計算頁碼的部份 - 未完成
+4.頁碼暫時被隱藏 - 未完成
+
+0: "2021.3.4.11.1.13.hsys.system.6.System Get Event Log SUCCESS"
+1: "2021.3.4.11.1.7.hsys.system.6.System Get Event Log SUCCESS"
+2: "2021.3.4.11.0.44.hsys.system.6.System Get Event Log SUCCESS"
+3: "2021.3.4.11.0.34.hsys.system.6.System Boot."
+4: "2021.3.4.10.31.48.hsys.system.6.System GET LPR Configure FAIL"
+
+
+年.月.日.時.分.秒.模組的名稱.logger的型態(loginfo的index).logger的等級.訊息,
+
+Main Type:
+0: no filter
+1: system
+2: operation
+3: exception
+4: alarm_in
+5: alarm_out
+6: lpr
+
+頁碼: 回傳pages
+
+Search: - ok
+1.Main Type: 回傳0或1
+0:All
+1:System
+
+回傳
+{
+    "function": "eventlog",
+    "action": "get",
+    "version": [
+        1,
+        0,
+        0
+    ],
+    "user": "user",
+    "status": 1,
+    "event_log_get_all": {
+        "pages": 0,
+        "nod": 5,
+        "type": 0,
+        "time_start": {
+            "year": 2018,
+            "month": 1,
+            "day": 2,
+            "hour": 1,
+            "minute": 0
+        },
+        "time_end": {
+            "year": 2036,
+            "month": 1,
+            "day": 3,
+            "hour": 16,
+            "minute": 59
+        },
+        "data": ""
+    }
+}
+
+LPR Log - ok
+---------------------------
+
+year 年
+month 月
+day 日
+hour 小時
+min 分鐘
+sec 秒
+
+License 車牌文字
+position  停車格的衛子
+channel 攝影基地幾個channel
+image 影像的位置
+
+
+林書平 EEE-1955 車牌
+林書平 AAA-1955 影像
+position_test2 停車格位置
+0 是channel
+
+1.頁碼暫時被隱藏 - 未完成
+
+
+01
+1610523986
+
+1
+1610523986
+
+"2021|01|13|15|46|28|9086-QX||1|img_011610523988.jpg,
+2021|01|13|15|46|27|9086-QX||1|img_011610523987.jpg,
+2021|01|13|15|46|22|AXB-7103||1|img_011610523982.jpg,
+2021|01|13|15|46|21|AXB-7103||1|img_011610523981.jpg,
+2021|01|13|15|46|20|AXB-7103||1|img_011610523980.jpg"
+
+順序:
+index
+時間 Time
+頻道	 Channel
+位置 Position
+車牌 OCR
+影像 snapshot
+
+

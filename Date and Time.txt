@@ -1,0 +1,54 @@
+Date and Time
+---------------------------
+System Time: 
+1.機器的時間(cgi)
+2.目前沒有回放和備份的功能
+
+3.小日曆問s - ok
+a.可以找別的套件處理
+
+4.system time: 
+a.一開始預設抓cgi - ok
+b.時間在小日曆設定完後按save可以讓秒數自動跑
+c.與電腦時間同步抓client端的時間
+
+5.如果有AM和PM的情況下，要怎麼傳入值(轉24小時制) - ok
+6.點了日曆後，如果時分秒在10以下，再改12小時制會多一個零 (回傳的時間在10以下會多個零，先隱藏變數)- ok
+7.如果在日曆上改了小時，切換12小時制會變成cgi抓的資料 - 未完成
+8.如果切換年月日的時候, slice取年月日的值會不同 - 未完成
+9.點日曆後，修改日曆年月日、時分秒，回傳的值是舊的 - (先暫時頁面重刷，事後調整成回傳資料) - 未完成
+10.如果選了日月年或月日年的情況，在選擇日曆的時候要做切換 - ok
+11.與電腦時間同步的時候，可以切換日期和時間格式 - 未完成
+12.修改送出資料還沒測試 - 未完成
+
+Synchronously:
+1.手動:調整System Time的時間
+2.NTP:顯示Time Server
+
+Time Server:
+1.ntp.ubuntu.com
+
+Zone: - 未完成
+region city
+
+載入資料
+action: get
+type: 1
+
+新增/修改資料
+action: set
+type: 2
+
+// 偵測12小時制或24小時制
+var dateFormatVal = document.querySelector('.js_DateFormat').value;
+
+switch (timeFormatVal) {
+    case '12':
+        changeYearMonthDayAMPM(dateFormatVal);
+        break;
+    case '24':
+        changeYearMonthDay(dateFormatVal);
+        break;
+    default:
+        changeYearMonthDayAMPM(dateFormatVal);
+}

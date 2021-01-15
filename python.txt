@@ -1,0 +1,41 @@
+python
+=============================
+ps:
+
+安裝venv
+E:\project\HiSharpFace> python -m venv venv
+PS E:\project\HiSharpFace> python install -r .\requirements.txt
+
+運行命令:
+E:\project\HiSharpFace>Set-ExecutionPolicy Unrestricted
+
+重新運行激活命令:
+E:\project\HiSharpFace>.\venv\Scripts\activate.bat (cmd)
+E:\project\HiSharpFace>.\venv\Scripts\activate.ps1 (ps)
+
+執行開啟檔案:
+(venv) PS E:\project\HiSharpFace>python manage.py runserver
+
+執行開啟檔案(手機連線設定):
+(venv) PS E:\project\HiSharpFace> python manage.py runserver 192.168.0.135:80
+192.168.0.135/user/getuser/
+
+改port
+E:\project\HiSharpFace>python manage.py runserver 9000
+
+離開:
+E:\project\HiSharpFace>deactivate
+
+------------------------------
+HISHARPFACE:
+
+執行命令:
+cmd.txt
+
+requirements.txt
+uWSGI==2.0.19.1 (註解，windows用不到)
+
+.env
+POSTGRESQL_HOST = 1.171.196.9 (改資料庫的IP: Danial)
+SUPER = root
+SUPER_PASSWORD = 00

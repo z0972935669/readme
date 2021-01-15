@@ -1,0 +1,296 @@
+工作週報
+==============================
+
+1.隱藏項目 - ok
+
+12/18
+
+System / Basic Information
+------------------------------
+Kernel Version (隱藏)
+Hardware Version (隱藏)
+Onvif Version (隱藏)
+OCX Version (隱藏)
+
+Image (隱藏)
+------------------------------
+Display Settings
+Video/Audio
+OSD
+Video Mask
+ROI Config
+
+12/21
+
+Alarm (隱藏)
+------------------------------
+Alarm In
+Alarm Out
+LPR
+Alarm Server
+
+Event (隱藏)
+------------------------------
+Exception
+Line Crossing
+Intrusion
+
+Network (隱藏)
+------------------------------
+Advanced
+
+Security (隱藏)
+------------------------------
+Block and Allow Lists
+Security Management
+
+
+2.新增style.min.css並壓縮 - ok
+
+3.更新jquery.min.js, 變更版本1.12.4 - ok
+
+4.System Information 已更新 - ok
+a.Device Name: 跟書平討論，要不要設按鈕做傳入(書平再開一個set)
+
+5.Date and Time - 先不做
+a.把DST 相關 start end offset 都 hidden 只留Zone - ok
+b.這一塊的時間更新應該要有現在時間，ntp校時，還有就是與電腦同步
+c.小日曆位置會跑版
+d.Zone: 要送什麼資料才會顯示+8
+
+6.Video / Audio - 未完成
+※.json 裡面 ratecontrol 的bitrate 要對應到 - ok
+※.json 裡面 ratecontrol 的mode 要對應到 網頁的bitrate type - ok
+※.json 裡面 quality 的value 要對應到 網頁的video quality - ? 
+※.json 裡面 的gop 要對應到 網頁的iframe - ok
+※.json 裡面 encode 的type 要對應到video compression - ok
+※.profile 和 sub stream 目前我們沒開出來 有需要再討論
+
+------------------------------
+
+7.新增大項AI和小項LPR類別 - ok 12/21
+
+8.TCP/IP頁面隱藏分類(IPv6, PPPoE Config, IP Change Notification Config) - ok 12/21
+
+9.user頁面隱藏 Bind MAC 欄位 - ok 12/21
+
+10.Backup and Restore 頁面隱藏 keep - ok 12/21
+
+11.Reboot 頁面隱藏 Timed Reboot - ok 12/21
+
+12.Operation Log 頁面隱藏 Login IP - ok 12/21
+
+13.User 已更新 - ok 12/21
+a.Add, Modify, Delete跟第4欄位先被隱藏了
+b.密碼的部份不用加密?? - 不用
+
+------------------------------
+
+14.串接Network API 12/22
+
+15.Date and Time: 12/22
+a.新增 System Time，Date Format，Time Format，Synchronously，Time Server 等欄位
+b.新增bootstrap4 datetimepicker - 決定要不要寫進報表
+
+16.修正System Information階層問題 ok 12/22
+
+17. 12/22
+隱藏項目:
+
+Security (隱藏)
+------------------------------
+online
+
+------------------------------
+
+18.調整font-awesome，修正icon出不來等問題 ok 12/23
+
+19.設定Network UI ok 12/23
+
+20.Network 串接修改的API ok 12/23
+
+------------------------------
+
+21.串接Date and Time API ok 12/24
+
+22.研究wdatepicker.js 12/24
+
+23.寫入日期格式功能 ok 12/24
+ 
+------------------------------
+
+24.Date and Time: ok 12/25
+a.編寫System Time, Date Format, Time Format, Synchronously連動程式 
+
+25.串接LPR API ok 12/25
+a.新增LPR列表和新增頁面
+b.串接LPR新增資料
+
+------------------------------
+
+26.Date and Time: 12/27
+a.新增日曆套件
+
+27.Alarm Out:
+a.新增Alarm Out頁面 ok
+b.串接Alarm Out API
+
+------------------------------
+
+28.新增串接Alarm Out修改API - ok 12/28
+
+29.串接 Reboot API - ok 12/28
+
+30.Back and Restore - ok 12/28
+a.串接 import API
+b.串接 export API
+
+31.Upgrade - ok 12/28
+a.串接 Upgrade API
+
+32.Date and Time: - ok
+a.調整日曆套件裡面的元件
+b.新增sweetalert套件
+
+------------------------------
+
+33.Date Time: - ok 12/29
+a.變更日曆套件, wdatepicker有版權問題
+b.測試Perfect-DateTimePicker套件
+c.調整datetimepicker css
+d.日曆變更串接cgi和帶入sweetalert套件
+
+------------------------------
+
+34.Date Time: - ok 12/30
+a.設置遮罩，以關閉日曆套件
+b.Date Time debug
+
+35.Backup and Restore, Upgrade
+a.設定上傳程式
+b.編寫css
+
+------------------------------
+
+36.Alarm in: - ok 12/31
+a.新增Alarm頁面
+b.串接Alarm in API
+c.串接Alarm in修改資料
+
+37.Date Time: - ok
+a.修正切換12小時制會多補零的問題
+b.移除Wdatetime套件
+c.設定年月日存值，並做傳值動作
+d.預選日期和時間格式時，選擇日曆時可配合格式切換
+e.隱藏日曆清除按鈕
+f.設定系統時間，可切換系統時間和cgi時間
+
+38.框架: - ok
+a.隱藏Live，Config，Search, Logout等選項
+
+------------------------------
+
+檢查date time, alarm in, lpr add
+
+39.隱藏Sub Type，User Name等欄位 - ok 1/4
+
+40.新增Log欄位 - ok
+
+41.串接eventlog API - ok
+
+42.新增主要類型，起訖日期 - ok
+
+43.eventlog串接搜尋 API - ok
+
+------------------------------
+
+44.Operation Log: - ok 1/5
+a.新增頁碼
+b.編寫頁碼css
+c.計算編號的值
+
+45.安裝驗證套件 - ok
+a.安裝validate.min.js
+b.安裝additional-methods.min.js
+c.研究validate參數設定
+
+------------------------------
+
+46.LPR - ok 1/6
+a.調整UI介面
+b.驗證日期時間、車牌號碼、停車位號碼等欄位
+
+------------------------------
+
+47.HISHARP FACE - ok 1/7
+a.安裝環境和運行程式
+b.設計HISHARP FACE LOGO，裁切跟去背
+c.更新bootstrap css, js 4.5.3版
+d.RWD製作user list
+
+------------------------------
+
+48.HISHARP FACE 1/8
+a.判斷在沒有資料的情況下，做提示訊息
+b.編寫搜尋功能
+c.非最高權限使用者強行登入後，新增錯誤訊息
+
+------------------------------
+
+49.HISHARP FACE 1/11
+a.編寫多檔上傳功能加測試
+b.非最高權限使用者強行登入後，新增錯誤訊息樣式和關閉功能。
+c.zip檔上傳，串接相關資料和設計頁面
+
+------------------------------
+
+50.HISHARP FACE 1/12
+a.RWD - 新增單筆資料頁面 
+
+51.AIBOX 1/12
+a.新增LPR Log頁面
+b.串接LPR Log API
+c.串接搜尋 API
+d.新增頁碼
+
+------------------------------
+
+52.HISHARP FACE 1/13
+a.開發多檔上傳功能
+
+※.LPR - 問車牌cgi, table - ok
+欄位: 時間 車牌 位置
+按鈕: 新增 刪除
+可能需要頁碼
+
+------------------------------
+
+AIBOX 1/14
+53.LPR Log
+a.串接Snapshot車牌辨識圖片
+b.調整table欄位
+
+54.原Operation Log 變改名稱 System Log
+55.依需求調整暫時性的alarm in/out頁面
+56.依需求調整暫時性的LPR頁面
+57.依需求調整LPR新增資料和刪除功能
+
+------------------------------
+
+HISHARP FACE
+
+
+※.大項多一個log, 問40 cgi看回傳的資料是什麼，問D 用jquery 把100筆資料拉進一個格式
+http://datatables.net/examples/styling/bootstrap4
+
+※.新增alarm in/out : 等api出來設計頁面 (沒有in, 只有out) - ok
+
+※.繁/英的部份做切換
+
+先定義中英文，用js做切換
+
+※.把網站全改成js轉html (等後面處理)
+
+※.現在set大部分都沒有擋，所以set下去 db那邊的數值是會被更改到的~
+
+※.之後要拿整個 user list 來判斷登入的部分

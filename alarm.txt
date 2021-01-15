@@ -1,0 +1,77 @@
+alarm
+---------------------------
+out
+
+現在的版本:(單個)
+{
+  "function": "event",
+  "action": "get",
+  "version": [
+    1,
+    0,
+    0
+  ],
+  "user": "user",
+  "status": 0,
+  "alarm_out": {
+    "enabled": 0,
+    "alarm_index": 0,
+    "type": 0,
+    "delay": 0,
+    "value": 0
+  }
+}
+
+enabled: checkbox
+名稱: alarm_index
+延遲: delay
+排程:　先隱藏
+
+傳入值:
+全都數字
+enabled: 0(關) / 1(開)
+alarm_index: 0
+type: 0:NC(長關) / 1:NO(長開)
+delay: 0(low) / 1(high)
+value: 0(low) / 1(high)
+
+之後再改成這樣: (多個)
+ {
+  "function": "event",
+  "action": "get",
+  "version": [
+    1,
+    0,
+    0
+  ],
+  "user": "user",
+  "status": 0,
+  "alarm_out": [
+    {
+      "enabled": 0,
+      "alarm_index": 0,
+      "type": 0,
+      "delay": 0,
+      "value": 0
+    }
+  ]
+}
+
+---------------------------
+in - ok
+
+enabled: checkbox
+名稱: alarm_index
+時間: keep input text(先0 ，disabled) - 暫時
+index: active_idx(先0 ，disabled) - 暫時
+type:active_type(先0 ，disabled) - 暫時
+
+傳入值:
+active_idx: 0
+active_type: 0
+alarm_index: 0 / 1
+enabled:0(關) / 1(開)
+keep: 0~120 
+type: 0(low) / 1(high)
+
+in/out:save先被隱藏了
