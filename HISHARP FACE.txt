@@ -46,3 +46,6 @@ image3
 
 9.刪除跟送出要存dir_uuid4值
   送dir_uuid4，圖片的值給D
+
+送出
+/api/adduser/

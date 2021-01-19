@@ -117,4 +117,8 @@ index
 車牌 OCR
 影像 snapshot
 
+11:28 林書平 Marcus希望 LPR Log 頁面需要0.5-1秒刷新一次
+11:29 林書平 LPR Log  加入 “刪除時間內所有log” 的功能
+11:29 林書平 還有刪除全部
 
+※.log需有匯出檔案，看是用excel做csv檔

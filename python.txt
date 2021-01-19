@@ -52,18 +52,22 @@ python manage.py runserver 192.168.0.151:9000
 
 
 # not daniel (2個視窗不能關)
-1.
+1.(D不在的時候才開)
 ssh user@192.168.0.151
 12345678
 cd Daniel/redis-stable/src/
 ./redis-server  
 
-2.
+2.(這個要開)
 ssh user@192.168.0.151
 12345678
 cd Daniel/Allen/
 source venv/bin/activate
 python RedisSetup.py
+
+※改資料庫IP
+(venv) user@user-System-Product-Name:~/Daniel/Allen$ vim .env
+(venv) user@user-System-Product-Name:~/Daniel/Allen$ python RedisSetup.py
 
 成功後會跑下列: 
 Start generating TenosrRT runtime models
