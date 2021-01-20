@@ -63,11 +63,11 @@ ssh user@192.168.0.151
 12345678
 cd Daniel/Allen/
 source venv/bin/activate
-python RedisSetup.py
+python BackgroundProgram.py
 
 ※改資料庫IP
 (venv) user@user-System-Product-Name:~/Daniel/Allen$ vim .env
-(venv) user@user-System-Product-Name:~/Daniel/Allen$ python RedisSetup.py
+(venv) user@user-System-Product-Name:~/Daniel/Allen$ python BackgroundProgram.py
 
 成功後會跑下列: 
 Start generating TenosrRT runtime models
