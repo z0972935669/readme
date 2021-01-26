@@ -122,3 +122,21 @@ index
 11:29 林書平 還有刪除全部
 
 ※.log需有匯出檔案，看是用excel做csv檔 - 未完成
+
+{"function": "eventlog", 
+"action": "set", 
+"version": [1,0,0], 
+"user": "user", 
+"staus": 0, 
+"event_log_operation":{  
+ "cmd": "export",
+ "param":  0}
+
+
+0 是export全部
+1 是上次收尋的結果
+
+09:38 林書平 應該主要問題是 你拉 要兩種 不同的 export按鈕
+09:38 林書平 如果沒有 上次 搜尋  你送了 第二種狀況 也會回傳操作錯誤給你
+
+需1~2的工作天，禮拜四問書平看看

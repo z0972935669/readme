@@ -1,0 +1,23 @@
+postgresql
+===========================
+URL:
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+download: Windows x86-64, 13.1
+
+pwd: a
+
+Query tool: 輸入SQL指令
+View Data: 看資料表
+
+1.安裝postgresql
+2.Dashboard > Add New Server
+3.
+General:
+Name: Daniel sql
+
+Connection
+Host(name/address): 192.168.0.151
+Password: 00000000
+
+4.Daniel Sql > Databases > HiSharpFace > Schemas > Tables > UserRegister

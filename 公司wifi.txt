@@ -1,4 +1,4 @@
 公司wifi:
 ===========================
-uid:hisharp_CS
+uid:hisharp_CS_5G
 pwd:cloud_22601576

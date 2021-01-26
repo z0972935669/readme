@@ -8,7 +8,14 @@ getuser
 2.當前頁修改資料 + lightbox
 3.修改btn
 4.刪除btn
-5.
+5.搜尋
+姓名 text
+部門 select
+工號 text
+卡號 text
+位置 select
+日期 start_date end_date
+
 
 adduser
 ------------------------------
@@ -54,3 +61,4 @@ image3
 10.送出要改寫 - ok
 11.圖像驗證的時候轉圈圈
 12.驗證表單 - ok
+
