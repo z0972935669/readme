@@ -69,6 +69,10 @@ python BackgroundProgram.py
 (venv) user@user-System-Product-Name:~/Daniel/Allen$ vim .env
 (venv) user@user-System-Product-Name:~/Daniel/Allen$ python BackgroundProgram.py
 
+※建立新資料庫 (cmd.txt)
+(venv) PS E:\project\HiSharpFace> python manage.py makemigrations
+(venv) PS E:\project\HiSharpFace> python manage.py migrate
+
 成功後會跑下列: 
 Start generating TenosrRT runtime models
 UNKNOWN: Deserialize required 502362 microseconds.

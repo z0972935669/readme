@@ -2,6 +2,8 @@ HISHARP FACE
 1.強化註冊跳提示
 2.新增跟修改資料欄位
 
+3.{% csrf_token %} 後面傳值給 D
+
 getuser
 ------------------------------
 1.縮圖
@@ -15,6 +17,8 @@ getuser
 卡號 text
 位置 select
 日期 start_date end_date
+
+6.編號放checkbox裡
 
 
 adduser
@@ -62,3 +66,16 @@ image3
 11.圖像驗證的時候轉圈圈
 12.驗證表單 - ok
 
+
+
+打卡記錄 
+copy getuser 圖片
+頁碼
+
+更改其他帳號的密碼 Api 只有 超級使用者 - 最後再做
+
+修改註冊使用者資料 Api 、刪除打卡圖片的 Api 跟 打卡記錄一樣
+
+
+API串接:5個工作天 1/27-2/2
+UI介面: 3個工作天 2/3-2/5 

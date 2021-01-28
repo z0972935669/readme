@@ -21,3 +21,55 @@ Host(name/address): 192.168.0.151
 Password: 00000000
 
 4.Daniel Sql > Databases > HiSharpFace > Schemas > Tables > UserRegister
+
+------------------------------
+.env
+# POSTGRESQL_NAME = HiSharpFace
+POSTGRESQL_NAME = a (資料庫名稱)
+POSTGRESQL_USER = postgres
+# POSTGRESQL_PASSWORD = 00000000
+POSTGRESQL_PASSWORD = 0 (資料庫密碼)
+# POSTGRESQL_HOST = 192.168.0.151
+POSTGRESQL_HOST = 127.0.0.1 (IP)
+POSTGRESQL_PORT = 5432
+REDIS_FACE = redis://localhost:6379/
+REDIS_FACE_DB = 0
+REDIS_REGISTER = redis://localhost:6379/
+REDIS_REGISTER_DB = 1
+REDIS_RESULT = redis://localhost:6379/
+REDIS_RESULT_DB = 2
+REDIS_UPDATE = redis://localhost:6379/
+REDIS_UPDATE_DB = 3
+SUPER = root
+SUPER_PASSWORD = 00
+C_LIB = ./Face/libtest.so
+
+------------------------------
+1.建立資料庫
+Servers > 右鍵 > Create > Server Group... > Name: Allen Server
+
+2.Allen Server > 右鍵 > Create > Server...
+Greneral
+a.Name: allen
+
+Connection
+a.Host(name/address): localhost
+b.password: 0
+
+3.Databases > Create > Database...
+General 
+a.Database: b
+
+4.建立新資料庫 (cmd.txt)
+(venv) PS E:\project\HiSharpFace> python manage.py makemigrations
+(venv) PS E:\project\HiSharpFace> python manage.py migrate
+
+5.refresh
+
+6.建立假資料
+(venv) PS E:\project\HiSharpFace> python manage.py shell
+from Admin.tests import create
+create()
+exit()
+
+7.refresh
