@@ -79,4 +79,19 @@ create_account()
 
 exit()
 
+※建立root
+BackgroundProgram.py: 先隱藏
+create_super()
+# main = Main()
+# main.run()
+
+(venv) PS E:\project\HiSharpFace> python .\BackgroundProgram.py
+
+BackgroundProgram.py: 開啟
+create_super()
+main = Main()
+main.run()
+
+(venv) PS E:\project\HiSharpFace> python manage.py runserver 
+
 7.refresh
