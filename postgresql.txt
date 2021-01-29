@@ -66,10 +66,17 @@ a.Database: b
 
 5.refresh
 
-6.建立假資料
+6.建立假資料 (Admin\tests.py)
 (venv) PS E:\project\HiSharpFace> python manage.py shell
-from Admin.tests import create
-create()
+
+from Admin.tests import create_profile, create_images, create_account, create_log
+※建立create_images前，一定要先有create_profile，除非已經有很多資料了，不然會報錯
+※建立create_log前，一定要先有create_account，除非已經有很多資料了，不然會報錯
+
+create_images()
+create_profile()
+create_account()
+
 exit()
 
 7.refresh
