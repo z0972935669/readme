@@ -50,6 +50,22 @@ import, export: 晚點問他們
 
 ------------------------------------------
 
+status
+1: 成功
+2. 執行中
+3. 被拒絕(數值超出上下屆等等的)
+4. 被忽略(目前好像沒用)
+5. 超過時間
+6. 傳送給其他模組遭到拒絕
+7. 處理中
+8. 無效的操作(沒有資料)
+15. Error
+
+16:49 林書平 目前你應該只會遇到
+16:49 林書平 1, 3, 5, 8, 15
+
+------------------------------------------
+
 1. system 的 回傳的時候 有些資料遺失的問題
 2. 太頻繁操作CGI 會有demon 斷線的問題
 3. 所有cgi裡面都要多加一個status 把狀態帶回來
@@ -58,19 +74,30 @@ import, export: 晚點問他們
 20210201.pdf
 
 ※alarm out: 等變更cgi的時候，改傳陣列傳值
+※user: 要下一版才能改
 
-date time
+
+system: 留到最後
+Device info setting
+
+date time: 留到最後
 1.Synchronize with computer time
 
-alarm out
+alarm out: OK
 1.多type 跟 value 欄位
 2.type和value, channel跟delay之間 - 問cgi
+
+lpr:
 
 lpradd
 1.channel: 下拉 0跟1 要+1
 2.white list: 下拉 黑跟白
 
-mainten
+network:
+
+user:
+
+maintenance:
 1.抓IP 後面加/uploads/AIBOX_v2.0.7
 
 lPR log:
