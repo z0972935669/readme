@@ -74,14 +74,45 @@ status
 20210201.pdf
 
 ※alarm out: 等變更cgi的時候，改傳陣列傳值
-※user: 要下一版才能改
-
 
 system: 留到最後
 Device info setting
 
 date time: 留到最後
+
 1.Synchronize with computer time
+
+3.ntp
+
+16:10 林書平 
+{
+  "function": "time",
+  "action": "set",
+  "version": [
+    1,
+    0,
+    0
+  ],
+  "user": "user",
+  "status": 0,
+  "datetime": {
+    "type": 1,
+    "format": 0,
+    "year": 2020,
+    "month": 1,
+    "day": 1,
+    "hour": 1,
+    "minute": 1,
+    "second": 1,
+    "region": "Asia",
+    "city": "Taipei"
+  }
+}
+
+16:10 林書平 type 改成 １
+
+js_Synchronously
+
 
 alarm out: OK
 1.多type 跟 value 欄位
@@ -102,3 +133,14 @@ maintenance:
 
 lPR log:
 1秒
+
+user:
+網頁/cgi
+check box/ enabled
+User Name/ username
+User Type/ userlevel(User level. 0 : Administrator  1 : Operator 2 : Viewer)
+
+
+如果可以抓到 login account 那 user setting 就可以有以下規則
+1. admin 不能被刪除(不要有刪除的buttun)
+2. 能夠修改 enable disable 的 使用者只能是 admin(enabled check box 才能被打開)
