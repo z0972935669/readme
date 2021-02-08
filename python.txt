@@ -13,6 +13,12 @@ E:\project\HiSharpFace>Set-ExecutionPolicy Unrestricted
 E:\project\HiSharpFace>.\venv\Scripts\activate.bat (cmd)
 E:\project\HiSharpFace>.\venv\Scripts\activate.ps1 (ps)
 
+開緩存:
+1.開redius-server.exe
+url: 桌面/Redis-x64-5.0.10/redis-server.exe
+2.多開一個powershell
+3.celery -A project worker --loglevel=info
+
 執行開啟檔案:
 (venv) PS E:\project\HiSharpFace>python manage.py runserver
 
@@ -67,6 +73,12 @@ cd Daniel/Allen/
 source venv/bin/activate
 python BackgroundProgram.py
 
+3.開緩存(這個要開):
+1.開redius-server.exe
+url: 桌面/Redis-x64-5.0.10/redis-server.exe
+2.多開一個powershell
+3.celery -A project worker --loglevel=info
+
 ※改資料庫IP
 (venv) user@user-System-Product-Name:~/Daniel/Allen$ vim .env
 (venv) user@user-System-Product-Name:~/Daniel/Allen$ python BackgroundProgram.py
@@ -88,6 +100,10 @@ End generating TensorRT runtime models
 size: 96088476
 WARNING: Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
 UNKNOWN: Deserialize required 427847 microseconds.
+
+------------------------------
+開啟404
+1.project\settings.py (DEBUG = True 改成 False)
 
 ------------------------------
 FTP
