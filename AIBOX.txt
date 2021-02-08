@@ -126,6 +126,9 @@ lpradd
 
 network:
 
+use the following the IP address: type = 0
+Obtain an IP address automatically: type = 1
+
 user:
 
 maintenance:
@@ -144,3 +147,38 @@ User Type/ userlevel(User level. 0 : Administrator  1 : Operator 2 : Viewer)
 如果可以抓到 login account 那 user setting 就可以有以下規則
 1. admin 不能被刪除(不要有刪除的buttun)
 2. 能夠修改 enable disable 的 使用者只能是 admin(enabled check box 才能被打開)
+
+
+{"function": "eventlog", 
+"action": "set", 
+"version": [1,0,0], 
+"user": "user" 
+"status": 0 
+"event_log_operation":{  
+ "type": 6,
+ "cmd": "export",
+ "param":  0}}
+
+ var/www/html/uploads/lpr_log.zip
+
+ {"function": "eventlog", 
+"action": "set", 
+"version": [1,0,0], 
+"user": "user" 
+"status": 0 
+"event_log_operation":{  
+ "type": 6,
+ "cmd": "import",
+ "param":  0}}
+
+{"function": "eventlog", 
+"action": "set", 
+"version": [1,0,0], 
+"user": "user" 
+"status": 0 
+"event_log_operation":{  
+ "type": 6,
+ "cmd": "clean",
+ "param":  0}}
+
+ clean: data清空，timer不動

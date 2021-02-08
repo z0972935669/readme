@@ -91,3 +91,9 @@ UI介面: 3個工作天 2/3-2/5
 修改頁面:
 
 E:\project\HiSharpFace\templates\User\GetProfileData.html 
+
+※修改使用者資料，單筆新增: 驗證錯誤照片全刪光後，再做一次，倒數有問題
+
+※做下拉頁數
+※做下拉25、50、100 傳limit
+※做由新到舊，由舊到新
