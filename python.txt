@@ -74,10 +74,15 @@ source venv/bin/activate
 python BackgroundProgram.py
 
 3.開緩存(這個要開):
-1.開redius-server.exe
+a.開redius-server.exe
 url: 桌面/Redis-x64-5.0.10/redis-server.exe
-2.多開一個powershell
-3.celery -A project worker --loglevel=info
+b.多開一個powershell
+
+ssh user@192.168.0.151
+12345678
+cd Daniel/Allen/
+source venv/bin/activate
+celery -A project worker --loglevel=info
 
 ※改資料庫IP
 (venv) user@user-System-Product-Name:~/Daniel/Allen$ vim .env
