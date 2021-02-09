@@ -29,6 +29,10 @@ url: 桌面/Redis-x64-5.0.10/redis-server.exe
 改port
 E:\project\HiSharpFace>python manage.py runserver 9000
 
+訪問404
+1.(venv) PS E:\project\HiSharpFace> python manage.py runserver --insecure
+2.project\settings.py: DEBUG = False
+
 離開:
 E:\project\HiSharpFace>deactivate
 
