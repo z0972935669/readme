@@ -1,99 +1,29 @@
 HISHARP FACE
-1.強化註冊跳提示
-2.新增跟修改資料欄位
+----------------------------
+打卡記錄
+1.位置改地區
+2.多一個欄位叫打卡位置
+3.搜尋條件多一個欄位叫打卡位置
 
-3.{% csrf_token %} 後面傳值給 D
+settings
+----------------------------
+api
+/api/settings/add/locations/
+/api/settings/add/departments/
+/api/settings/delete/locations/
+/api/settings/delete/departments/
 
-getuser
-------------------------------
-1.縮圖
-2.當前頁修改資料 + lightbox
-3.修改btn
-4.刪除btn
-5.搜尋
-姓名 text
-部門 select
-工號 text
-卡號 text
-位置 select
-日期 start_date end_date
+map
+0.5請求一次
 
-6.編號放checkbox裡
+url: /event/warning/
+method: get
 
+ps1
+.\venv\Scripts\activate.ps1
+python .\main.py
 
-adduser
-------------------------------
-1.新增上傳圖片物件 - ok
-2.上傳後新增附加檔案，下面顯示「檔案名稱」 - ok
-3.「檔案名稱」旁設checkbox - 改X
-4.下面有按鈕可以驗證，按驗證按鈕後需要網址傳ajax提供圖片名稱給Danial，最多3筆 - ok
-5.勾選checkbox可移除 - 改X
-6.送出下面要做虛擬頭像 * 3，驗證完要替換虛擬頭像 - 不用
-
-※跟Danial討論看是跳轉網頁還是使用ajax - 不用
-
-urls.py
-
-image1
-image2
-image3
-
-/api/addimages/
-
-key:
-image1
-image2
-image3
-
-/api/deleteregisteruser/
-
-7.驗證OK的話，圖片就留著，然後換頭像的圖 - 不用
-  驗證error的話，不可以按送出按鈕，叫客戶端要刪掉，要帶dir_uuid4給D - 不用傳圖片路徑和uuid - ok
-
-8.看是要
-  驗證有誤 還堅持送出  你就跳出一個警告說 
-  驗證圖片內有失敗的部份 確定送出嗎？
-  還是連送都不給送
-
-9.刪除跟送出要存dir_uuid4值  - 不用傳圖片路徑和uuid, 改傳單筆改，取name值
-  送dir_uuid4，圖片的值給D - 不用
-  ※按驗證完後倒數10分鐘，如果時間到, 提示「圖像已失效，請重新驗證圖像」 - ok
-
-送出
-/api/adduser/
-
-10.送出要改寫 - ok
-11.圖像驗證的時候轉圈圈
-12.驗證表單 - ok
-
-
-
-打卡記錄 - OK
-copy getuser 圖片
-頁碼
-
-更改其他帳號的密碼 Api 只有 超級使用者 - 最後再做
-
-修改註冊使用者資料 Api 、刪除打卡圖片的 Api 跟 打卡記錄一樣
-
-
-註冊: - D OK
-------------------------------
-1.判斷帳號是否存在
-2.密碼跟確認密碼是否一致
-3.改ajax
-
-API串接:5個工作天 1/27-2/2
-UI介面: 3個工作天 2/3-2/5
-
-
-------------------------------
-修改頁面:
-
-E:\project\HiSharpFace\templates\User\GetProfileData.html 
-
-※修改使用者資料，單筆新增: 驗證錯誤照片全刪光後，再做一次，倒數有問題
-
-※做下拉頁數
-※做下拉25、50、100 傳limit
-※做由新到舊，由舊到新
+ps2
+加值: json={'events': [1, 2]})
+.\venv\Scripts\activate.ps1
+執行: python .\test.py
