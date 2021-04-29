@@ -5,6 +5,39 @@ LIVE
 uid: admin
 pwd: admin
 
+-------------------------------------
+live.html
+
+<div><video id="stream" autoplay playsinline>Your browser doesn't support video</video></div>
+<div class="ccle">
+	<div class='mediaSrc0'>
+	</div>
+	<div class='mediaSrc1'>
+	</div>
+	<div class='mediaSrc2'>
+	</div>
+	<div class='mediaSrc3'>
+	</div>
+</div>
+
+RTCPeerConnectionWrapper.prototype.handleRemoteStreamAdded = function(event)
+{
+	console.log('Remote stream this obj : ', this);
+	let idx = this.srcMediaID;
+	this['video'+idx] = document.createElement('video');
+	this['video'+idx].srcObject = event.streams[0];
+	this['video'+idx].autoplay = true;
+	this['video'+idx].muted = true;
+	this['video'+idx].playsinline = true;
+	var textnode = document.createTextNode(this.devName);
+	document.querySelector('.mediaSrc'+idx).appendChild(textnode);
+	var newElement = document.createElement("br");
+	document.querySelector('.mediaSrc'+idx).appendChild(newElement);
+	//document.querySelector('.videos').appendChild(this['video'+idx]);
+	document.querySelector('.mediaSrc'+idx).appendChild(this['video'+idx]);
+
+	console.log('Append video element: ', idx, this['video'+idx]);
+}
 
 -------------------------------------
 
