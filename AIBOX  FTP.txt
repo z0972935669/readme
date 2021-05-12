@@ -31,3 +31,15 @@ pwd: 0000
 
 路徑:
 ./var/www/
+
+---------------------------
+八德的IP: 192.20.62.7
+uid: allen
+pwd: allen0000
+
+---------------------------
+netextender:
+SSL VPN Server: 122.147.146.254:4433
+User: scott
+Password:3939889abc
+Domain: HS
