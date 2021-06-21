@@ -1,0 +1,64 @@
+補休變慰勞假
+
+慰勞假剩20小時
+6/2 5小時
+6/4 5小時
+6/15 4小時
+5小時: 之後請假直接跟stephen說，可早點離開
+特休剩1天
+
+14 + 6
+
+家庭照顧假:
+1.戶口名簿影本
+2.相關證明
+交給主管
+
+---------------------------------------
+
+1.氣體室
+2.動力中心
+3.B電荷
+4.鍋爐室
+
+---------------------------------------
+
+<!-- 隱藏 -->
+<!-- <li>
+    <a href="#ImageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Image</a>
+    <ul class="collapse list-unstyled" id="ImageSubmenu">
+        
+        <li>
+            <a href="camera.html" target="configRightFrame">Display Settings</a>
+        </li>
+        
+        <li>
+            <a href="stream.html" target="configRightFrame">Video/Audio</a>
+        </li>
+        <li>
+            <a href="osd.html" target="configRightFrame">OSD</a>
+        </li>
+        <li>
+            <a href="mask.html" target="configRightFrame">Video Mask</a>
+        </li>
+        <li>
+            <a href="roi.html" target="configRightFrame">ROI Config</a>
+        </li>
+    </ul>
+</li> -->
+<!-- end 隱藏 -->
+
+25.12006543567774, 121.5202242996045
+
+ & e:/project/map-v.1.0.1/venv/Scripts/Activate.ps1
+
+ python .\main.py
+
+ python .\test.py
+
+ 192.168.0.161
+
+ <video style="background: red; width: 480px; height: 270px;"></video>
+
+ ---------------------------------------
+ 
