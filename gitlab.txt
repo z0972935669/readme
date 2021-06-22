@@ -5,3 +5,11 @@ http://192.168.0.228
 
 家裡 (安裝open VPN)
 http://10.8.2.1
+
+openVPN
+https://drive.google.com/drive/folders/1VWBPjLiUQ5194tWmpJIKt2pygLDG4n7s
+1、下載openVPN
+2、下載inside.ovpn
+3、把inside.ovpn丟進openVPN
+4、帳號: hs
+5、密碼: 22601576
