@@ -1,0 +1,17 @@
+user
+------------------------------
+192.168.0.106
+
+CMD:
+
+1.ssh user@192.168.0.106
+2.yes
+3.12345678
+4.ls
+5.cd HiSharpTest/
+6.ls
+7.cd hisharp-cloud
+8.git pull
+9.輸入帳號密碼
+10.npm build
+11.sudo nginx -r reload (build完之後輸入)
