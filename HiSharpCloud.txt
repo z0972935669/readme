@@ -15,3 +15,13 @@ CMD:
 9.輸入帳號密碼
 10.npm build
 11.sudo nginx -r reload (build完之後輸入)
+
+-----------------------------
+api 本機
+
+1..\venv\Scripts\activate.ps1
+2.開Redis
+3.2個cmd
+4.celery -A project worker --loglevel=info
+5.python .\manage.py runserver
+6.http://127.0.0.1:8000/api/
