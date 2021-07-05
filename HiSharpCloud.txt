@@ -14,7 +14,7 @@ CMD:
 8.git pull
 9.輸入帳號密碼
 10.npm build
-11.sudo nginx -r reload (build完之後輸入)
+11.sudo nginx -s reload (build完之後輸入)
 
 -----------------------------
 api 本機
@@ -25,3 +25,4 @@ api 本機
 4.celery -A project worker --loglevel=info
 5.python .\manage.py runserver
 6.http://127.0.0.1:8000/api/
+
