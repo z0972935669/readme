@@ -17,7 +17,7 @@ E:\project\HiSharpFace>.\venv\Scripts\activate.ps1 (ps)
 1.開redius-server.exe
 url: 桌面/Redis-x64-5.0.10/redis-server.exe
 2.多開一個powershell
-3.celery -A project worker --loglevel=info
+3.celery -A project worker --loglevel=info -P gevent
 
 執行開啟檔案:
 (venv) PS E:\project\HiSharpFace>python manage.py runserver
